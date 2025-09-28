@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnoMundo - Mi Tienda Genial</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- ENCABEZADO DE LA TIENDA -->
+    <header>
+        <h1>🛒 TechnoMundo - Tienda Súper Genial</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">🛍️ Productos</a></li>
+                <li><a href="#contacto">📞 Contacto</a></li>
+                <li><a href="#sobre-nosotros">ℹ️ Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+        <button id="boton-carrito">🛒 Carrito (0) - $0</button>
+    </header>
+
+    <!-- MENSAJE DE BIENVENIDA -->
+    <section id="hero">
+        <h2>¡Bienvenido a TechnoMundo!</h2>
+        <p>La mejor tecnología al mejor precio 🌟</p>
+        <div class="estadisticas">
+            <div class="stat">
+                <h3>1000+</h3>
+                <p>Clientes Felices</p>
+            </div>
+            <div class="stat">
+                <h3>⭐⭐⭐⭐⭐</h3>
+                <p>5 Estrellas</p>
+            </div>
+            <div class="stat">
+                <h3>24/7</h3>
+                <p>Soporte</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS GENIALES -->
+    <section id="productos">
+        <h2>🌟 Nuestros Productos Súper Geniales</h2>
+        
+        <!-- PRODUCTO 1 -->
+        <article class="producto">
+            <div class="producto-imagen">🎧</div>
+            <div class="producto-info">
+                <h3>Auriculares Mágicos Pro</h3>
+                <p class="descripcion">Cancelación de ruido que te teletransporta a otro mundo</p>
+                <div class="caracteristicas">
+                    <span>✅ Bluetooth 5.0</span>
+                    <span>✅ 30h Batería</span>
+                    <span>✅ Resistente al agua</span>
+                </div>
+                <div class="precio">$89.99</div>
+                <button class="btn-comprar" onclick="añadirAlCarrito(1)">🛒 Añadir al Carrito</button>
+            </div>
+        </article>
+
+        <!-- PRODUCTO 2 -->
+        <article class="producto">
+            <div class="producto-imagen">⌚</div>
+            <div class="producto-info">
+                <h3>SmartWatch Ultra</h3>
+                <p class="descripcion">Un reloj tan inteligente que casi piensa por ti</p>
+                <div class="caracteristicas">
+                    <span>✅ Monitor Cardíaco</span>
+                    <span>✅ GPS Integrado</span>
+                    <span>✅ Pago NFC</span>
+                </div>
+                <div class="precio">$199.99</div>
+                <button class="btn-comprar" onclick="añadirAlCarrito(2)">🛒 Añadir al Carrito</button>
+            </div>
+        </article>
+
+        <!-- PRODUCTO 3 -->
+        <article class="producto">
+            <div class="producto-imagen">🎮</div>
+            <div class="producto-info">
+                <h3>Control Gaming Elite</h3>
+                <p class="descripcion">Para ser el mejor gamer del universo conocido</p>
+                <div class="caracteristicas">
+                    <span>✅ Botones Programables</span>
+                    <span>✅ Vibración HD</span>
+                    <span>✅ Batería 40h</span>
+                </div>
+                <div class="precio">$79.99</div>
+                <button class="btn-comprar" onclick="añadirAlCarrito(3)">🛒 Añadir al Carrito</button>
+            </div>
+        </article>
+
+        <!-- PRODUCTO 4 -->
+        <article class="producto">
+            <div class="producto-imagen">📱</div>
+            <div class="producto-info">
+                <h3>Smartphone Pro Max</h3>
+                <p class="descripcion">Más inteligente que algunos humanos que conozco</p>
+                <div class="caracteristicas">
+                    <span>✅ Cámara 108MP</span>
+                    <span>✅ 5G Super Rápido</span>
+                    <span>✅ Batería 2 días</span>
+                </div>
+                <div class="precio">$599.99</div>
+                <button class="btn-comprar" onclick="añadirAlCarrito(4)">🛒 Añadir al Carrito</button>
+            </div>
+        </article>
+
+        <!-- PRODUCTO 5 -->
+        <article class="producto">
+            <div class="producto-imagen">💻</div>
+            <div class="producto-info">
+                <h3>Laptop Gaming Beast</h3>
+                <p class="descripcion">Una bestia tecnológica que devora cualquier juego</p>
+                <div class="caracteristicas">
+                    <span>✅ RTX 4080 Super</span>
+                    <span>✅ 32GB RAM</span>
+                    <span>✅ Pantalla 240Hz</span>
+                </div>
+                <div class="precio">$1299.99</div>
+                <button class="btn-comprar" onclick="añadirAlCarrito(5)">🛒 Añadir al Carrito</button>
+            </div>
+        </article>
+
+        <!-- PRODUCTO 6 -->
+        <article class="producto">
+            <div class="producto-imagen">🥽</div>
+            <div class="producto-info">
+                <h3>Gafas VR Mágicas</h3>
+                <p class="descripcion">Portal a realidades que ni sabías que existían</p>
+                <div class="caracteristicas">
+                    <span>✅ 4K por ojo</span>
+                    <span>✅ Sin cables</span>
+                    <span>✅ Tracking 360°</span>
+                </div>
+                <div class="precio">$399.99</div>
+                <button class="btn-comprar" onclick="añadirAlCarrito(6)">🛒 Añadir al Carrito</button>
+            </div>
+        </article>
+    </section>
+
+    <!-- NUEVA SECCIÓN: SOBRE NOSOTROS -->
+    <section id="sobre-nosotros">
+        <h2>🌟 ¿Quiénes Somos?</h2>
+        <div class="sobre-nosotros-grid">
+            <div class="info-card">
+                <h3>🚀 Nuestra Misión</h3>
+                <p>Llevar la mejor tecnología a tu casa sin que tu billetera llore</p>
+            </div>
+            <div class="info-card">
+                <h3>⭐ Nuestra Visión</h3>
+                <p>Ser la tienda más genial de tecnología en todo el planeta</p>
+            </div>
+            <div class="info-card">
+                <h3>💎 Nuestros Valores</h3>
+                <p>Calidad, precios justos y atención al cliente súper genial</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: CONTACTO -->
+    <section id="contacto">
+        <h2>📞 ¡Escríbenos!</h2>
+        <div class="contacto-container">
+            <div class="info-contacto">
+                <h3>📍 Nuestra Info</h3>
+                <p><strong>📧 Email:</strong> hola@technomundo.com</p>
+                <p><strong>📱 Teléfono:</strong> +1 (555) 123-4567</p>
+                <p><strong>🕒 Horario:</strong> 24/7 (¡Nunca dormimos!)</p>
+                <p><strong>📍 Ubicación:</strong> En algún lugar genial</p>
+            </div>
+
+            <form class="formulario" id="formulario-contacto">
+                <h3>✉️ Envíanos un Mensaje</h3>
+                
+                <label for="nombre">👤 Tu Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">📧 Tu Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">💬 Tu Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">🚀 Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <h3>🛒 TechnoMundo</h3>
+        <p>La mejor tecnología, los mejores precios, la mejor experiencia</p>
+        <p>&copy; 2025 TechnoMundo. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#">📘 Facebook</a>
+            <a href="#">📷 Instagram</a>
+            <a href="#">🐦 Twitter</a>
+        </div>
+    </footer>
+
+    <script src="superpoderes.js"></script>
+</body>
+</html>

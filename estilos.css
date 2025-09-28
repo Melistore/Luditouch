@@ -1,0 +1,634 @@
+/* 🎨 ESTILOS SÚPER BONITOS PARA TECHNOMUNDO */
+
+/* ✨ CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e8f5e8 0%, #f1f8e9 100%);
+    color: #2e7d32;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* 🏠 ENCABEZADO GENIAL */
+header {
+    background: linear-gradient(135deg, #66bb6a 0%, #4caf50 100%);
+    color: white;
+    padding: 25px;
+    box-shadow: 0 5px 25px rgba(76, 175, 80, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* 🧭 MENÚ DE NAVEGACIÓN */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* 🛒 BOTÓN DEL CARRITO SÚPER GENIAL */
+#boton-carrito {
+    background: linear-gradient(45deg, #ff7043 0%, #ff5722 100%);
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(255, 112, 67, 0.4);
+}
+
+#boton-carrito:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 30px rgba(255, 112, 67, 0.6);
+}
+
+/* 🌟 SECCIÓN HERO (BIENVENIDA) */
+#hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #a5d6a7 0%, #81c784 50%, #66bb6a 100%);
+    color: white;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
+    animation: floatBubbles 20s infinite linear;
+}
+
+@keyframes floatBubbles {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100px); }
+}
+
+#hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 1;
+}
+
+#hero p {
+    font-size: 1.4rem;
+    opacity: 0.9;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+/* 📊 ESTADÍSTICAS GENIALES */
+.estadisticas {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.stat {
+    background: rgba(255,255,255,0.2);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.3);
+    min-width: 120px;
+    transition: all 0.3s ease;
+}
+
+.stat:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: rgba(255,255,255,0.3);
+}
+
+.stat h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* 🛍️ SECCIÓN DE PRODUCTOS */
+#productos {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+#productos h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 60px;
+    color: #1b5e20;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* 📦 TARJETAS DE PRODUCTOS SÚPER GENIALES */
+.producto {
+    background: white;
+    margin: 40px 0;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(76, 175, 80, 0.15);
+    border: 2px solid #e8f5e8;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+/* ✨ EFECTO MÁGICO AL PASAR EL MOUSE */
+.producto:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 25px 60px rgba(76, 175, 80, 0.25);
+    border-color: #66bb6a;
+}
+
+/* 🎭 EFECTO DE BRILLO MÁGICO */
+.producto::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: rotate(45deg);
+    transition: all 0.6s;
+    opacity: 0;
+}
+
+.producto:hover::before {
+    animation: shine 0.8s ease-in-out;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); opacity: 0; }
+}
+
+/* 🖼️ IMAGEN DEL PRODUCTO */
+.producto-imagen {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #4fc3f7 0%, #29b6f6 50%, #0288d1 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.producto-imagen::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+    animation: shimmer 4s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 📝 INFORMACIÓN DEL PRODUCTO */
+.producto-info {
+    flex: 1;
+}
+
+.producto-info h3 {
+    font-size: 1.8rem;
+    color: #1b5e20;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.descripcion {
+    color: #558b2f;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* ✅ CARACTERÍSTICAS GENIALES */
+.caracteristicas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.caracteristicas span {
+    font-size: 0.9rem;
+    color: #2e7d32;
+    background: linear-gradient(45deg, #e8f5e8, #f1f8e9);
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #c8e6c9;
+    font-weight: 600;
+}
+
+/* 💰 PRECIO SÚPER LLAMATIVO */
+.precio {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0277bd;
+    background: linear-gradient(45deg, #e1f5fe, #b3e5fc);
+    padding: 15px 25px;
+    border-radius: 25px;
+    display: inline-block;
+    box-shadow: 0 8px 20px rgba(2, 119, 189, 0.3);
+    margin-bottom: 25px;
+    border: 2px solid rgba(2, 119, 189, 0.2);
+}
+
+/* 🔘 BOTONES SÚPER GENIALES */
+.btn-comprar {
+    background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%);
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-comprar::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    transition: all 0.6s ease;
+    transform: translate(-50%, -50%);
+}
+
+.btn-comprar:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-comprar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(76, 175, 80, 0.5);
+}
+
+.btn-comprar:active {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);
+}
+
+/* 🌟 SECCIÓN SOBRE NOSOTROS */
+#sobre-nosotros {
+    background: white;
+    padding: 80px 20px;
+    margin: 60px 0;
+    text-align: center;
+}
+
+#sobre-nosotros h2 {
+    font-size: 2.8rem;
+    color: #1b5e20;
+    margin-bottom: 50px;
+}
+
+.sobre-nosotros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.info-card {
+    background: linear-gradient(145deg, #f1f8e9, white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(76, 175, 80, 0.1);
+    border: 2px solid #e8f5e8;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #66bb6a, #4caf50, #81c784);
+    border-radius: 20px 20px 0 0;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(76, 175, 80, 0.2);
+    border-color: #66bb6a;
+}
+
+.info-card h3 {
+    color: #1b5e20;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.info-card p {
+    color: #558b2f;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* 📞 SECCIÓN DE CONTACTO */
+#contacto {
+    background: linear-gradient(135deg, #e8f5e8, white);
+    padding: 80px 20px;
+    margin: 60px 0;
+}
+
+#contacto h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #1b5e20;
+    margin-bottom: 50px;
+}
+
+.contacto-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.info-contacto {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(76, 175, 80, 0.1);
+    border: 2px solid #e8f5e8;
+}
+
+.info-contacto h3 {
+    color: #1b5e20;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.info-contacto p {
+    color: #2e7d32;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f8e9;
+}
+
+.info-contacto p:last-child {
+    border-bottom: none;
+}
+
+/* ✉️ FORMULARIO GENIAL */
+.formulario {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(76, 175, 80, 0.1);
+    border: 2px solid #e8f5e8;
+}
+
+.formulario h3 {
+    color: #1b5e20;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.formulario label {
+    display: block;
+    color: #2e7d32;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e8f5e8;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #2e7d32;
+    transition: all 0.3s ease;
+    background: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #66bb6a;
+    box-shadow: 0 0 15px rgba(102, 187, 106, 0.3);
+    background: white;
+    transform: scale(1.02);
+}
+
+.formulario textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.formulario button {
+    background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%);
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+}
+
+.formulario button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(76, 175, 80, 0.5);
+}
+
+/* 🦶 FOOTER GENIAL */
+footer {
+    background: linear-gradient(135deg, #2e7d32 0%, #388e3c 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+footer h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.redes-sociales {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.redes-sociales a {
+    color: white;
+    text-decoration: none;
+    background: rgba(255,255,255,0.1);
+    padding: 12px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.redes-sociales a:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* 📱 RESPONSIVE PARA CELULARES */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    #hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    .estadisticas {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .producto {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .producto-imagen {
+        width: 120px;
+        height: 120px;
+        font-size: 3rem;
+    }
+    
+    .contacto-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .sobre-nosotros-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ✨ ANIMACIONES ESPECIALES */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.producto {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.producto:nth-child(1) { animation-delay: 0.1s; }
+.producto:nth-child(2) { animation-delay: 0.2s; }
+.producto:nth-child(3) { animation-delay: 0.3s; }
+.producto:nth-child(4) { animation-delay: 0.4s; }
+.producto:nth-child(5) { animation-delay: 0.5s; }
+.producto:nth-child(6) { animation-delay: 0.6s; }
